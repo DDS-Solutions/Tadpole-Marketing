@@ -26,20 +26,48 @@ const { title, description } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-zinc-800 selection:text-white">
-    <div class="neural-grid"></div>
-		<slot />
+	<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-500/30">
+    <!-- Neural Backdrop Overlay -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <div class="neural-grid"></div>
+      <!-- Background Auras -->
+      <div class="glow-emerald -top-48 -left-48 animate-pulse"></div>
+      <div class="glow-zinc top-1/2 -right-64"></div>
+      <div class="glow-emerald -bottom-64 left-1/2 -translate-x-1/2"></div>
+    </div>
+
+    <slot />
     
     <style is:global>
       /* Premium Dot Grid */
       .neural-grid {
-        position: fixed;
+        position: absolute;
         inset: 0;
         opacity: 0.05;
-        pointer-events: none;
         background-image: radial-gradient(circle, #fff 1px, transparent 1px);
         background-size: 40px 40px;
-        z-index: 0;
+      }
+
+      /* Glow & Glass Utilities */
+      .glass-surface {
+        @apply bg-zinc-950/40 backdrop-blur-xl border border-white/5;
+        box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+      }
+
+      .glow-emerald {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+        filter: blur(60px);
+      }
+
+      .glow-zinc {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(63, 63, 70, 0.1) 0%, transparent 70%);
+        filter: blur(80px);
       }
 
       /* Custom Scrollbar */
