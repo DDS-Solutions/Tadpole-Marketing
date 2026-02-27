@@ -1,43 +1,49 @@
-# Astro Starter Kit: Minimal
+<div align="center">
+  <img src=".github/assets/social-preview.png" width="800" alt="Tadpole OS - Sovereign Intelligence" />
 
-```sh
-npm create astro@latest -- --template minimal
-```
+  # 🚀 Tadpole OS Marketing Hub
+  **The high-performance, Astro-powered gateway to the Sovereign Protocol.**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+  [![Astro](https://img.shields.io/badge/Astro-5.0-zinc?style=for-the-badge&logo=astro&logoColor=FF5D01)](https://astro.build/)
+  [![Tailwind](https://img.shields.io/badge/Tailwind-v4-zinc?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)](https://tailwindcss.com/)
+  [![GEO-Ready](https://img.shields.io/badge/GEO-Optimized-emerald?style=for-the-badge&logo=google-cloud&logoColor=white)](#geo-strategy)
+  
+  ---
+</div>
 
-## 🚀 Project Structure
+This repository contains the source code for the official **Tadpole OS** marketing website, built with **Astro** for zero-JS performance and extreme search engine discoverability.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🌟 Key Features
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Zero-JS by Default**: Pure HTML/CSS output for near-instant load times and AI agent crawling.
+- **Sovereign Dark Theme**: Deep visual alignment with the core Tadpole OS engine.
+- **GEO Optimized**: Structured data (JSON-LD) and agent-friendly meta tags.
+- **Governance Whitepaper**: Integrated Sovereign Protocol documentation.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Tech Stack
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Framework**: [Astro](https://astro.build/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment**: [GitHub Pages](https://pages.github.com/) (Recommended)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🧞 Development Commands
 
-## 🧞 Commands
+All commands are run from the root of the project:
 
-All commands are run from the root of the project, from a terminal:
+| Command | Action |
+| :--- | :--- |
+| `npm install` | Installs dependencies |
+| `npm run dev` | Starts local dev server at `localhost:4321` |
+| `npm run build` | Build your production site to `./dist/` |
+| `npm run preview` | Preview your build locally |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📐 GEO Strategy
 
-## 👀 Want to learn more?
+Tadpole OS Marketing is built with **Generative Engine Optimization** in mind. We prioritize:
+1. **Semantic HTML**: Clear heading hierarchies for LLM decomposition.
+2. **Structured Data**: Schema.org JSON-LD for SoftwareApplication and FAQ.
+3. **Flat Navigation**: Minimizing crawl depth for easier indexing.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+[Return to Core Engine](https://github.com/DDS-Solutions/TadPole-OS)
