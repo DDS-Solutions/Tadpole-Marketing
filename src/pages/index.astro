@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+	title="Tadpole OS | Secure, Local-First Multi-Agent Swarms"
+	description="The high-performance, autonomous engine for sovereign intelligence. Built for SMBs who demand scalability and absolute data control."
+>
+	<main class="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
+		<!-- Hero Section -->
+		<section class="text-center space-y-8">
+			<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs font-mono text-zinc-400 animate-neural-pulse">
+				<span class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+				ENGINE STATUS: ALPHA-1 READY
+			</div>
+			
+			<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white">
+				The Sovereign Engine for <span class="text-zinc-400">Autonomous Growth</span>
+			</h1>
+			
+			<p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto">
+				Tadpole OS is a local-first runtime for high-performance multi-agent swarms. 
+				Scale from single-task agents to massive intelligence clusters with absolute data sovereignty.
+			</p>
+			
+			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+				<a href="https://github.com/tadpole-os/tadpole-os" class="w-full sm:w-auto px-8 py-3 bg-white text-zinc-950 font-semibold rounded-lg hover:bg-zinc-200 transition-colors">
+					Fork on GitHub
+				</a>
+				<a href="#governance" class="w-full sm:w-auto px-8 py-3 bg-zinc-900 border border-zinc-800 text-white font-semibold rounded-lg hover:bg-zinc-800 transition-colors">
+					Read Whitepaper
+				</a>
+			</div>
+		</section>
+
+		<!-- Feature Grid (Agent-Friendly / GEO) -->
+		<section class="grid md:grid-cols-3 gap-8 py-24 border-t border-zinc-900 mt-24" id="features">
+			<div class="space-y-4 p-6 bg-zinc-900/30 border border-zinc-900 rounded-xl hover:border-zinc-800 transition-colors group">
+				<div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center group-hover:bg-zinc-700">
+					<span class="font-mono text-white">01</span>
+				</div>
+				<h3 class="text-xl font-bold">Local-First Privacy</h3>
+				<p class="text-zinc-500">Your intelligence, your hardware. Tadpole OS runs completely local, ensuring your strategic directives never touch the public cloud.</p>
+			</div>
+			
+			<div class="space-y-4 p-6 bg-zinc-900/30 border border-zinc-900 rounded-xl hover:border-zinc-800 transition-colors group">
+				<div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center group-hover:bg-zinc-700">
+					<span class="font-mono text-white">02</span>
+				</div>
+				<h3 class="text-xl font-bold">Massive Parallel Swarms</h3>
+				<p class="text-zinc-500">Recruit 25+ specialized agents simultaneously via Rust-powered concurrency. Scale horizontally without latency bottlenecks.</p>
+			</div>
+
+			<div class="space-y-4 p-6 bg-zinc-900/30 border border-zinc-900 rounded-xl hover:border-zinc-800 transition-colors group">
+				<div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center group-hover:bg-zinc-700">
+					<span class="font-mono text-white">03</span>
+				</div>
+				<h3 class="text-xl font-bold">Overlord Governance</h3>
+				<p class="text-zinc-500">Keep a human-in-the-loop for mission-critical actions. The Overlord (Entity 0) approves, denies, or reroutes sensitive agent tasks.</p>
+			</div>
+		</section>
+
+    <!-- Structured Content for AI SEO (GEO) -->
+    <section class="max-w-3xl mx-auto py-12 space-y-12">
+      <div class="border-l-2 border-zinc-800 pl-8 space-y-4">
+        <h2 class="text-2xl font-bold">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-bold text-zinc-300">What is "Sovereign Intelligence"?</h4>
+            <p class="text-sm text-zinc-500 mt-1">Sovereign intelligence refers to the AI computing paradigm where the owner (The Overlord) maintains absolute control over the data, model parameters, and execution environment.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-zinc-300">How does Tadpole OS handle scalability for SMBs?</h4>
+            <p class="text-sm text-zinc-500 mt-1">Our "Start Small, Swarm Big" architecture allows growing teams to deploy single agent nodes and expand into hierarchical clusters as operational complexity increases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+
+  <!-- JSON-LD for AI Search Engines (GEO) -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Tadpole OS",
+      "applicationCategory": "AI Operating System",
+      "operatingSystem": "Cross-platform (Rust Runtime)",
+      "description": "A high-performance, local-first engine for sovereign multi-agent swarms.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Tadpole OS Project"
+      }
+    }
+  </script>
+</BaseLayout>
