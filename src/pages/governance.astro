@@ -9,48 +9,52 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	<main class="relative z-10 max-w-4xl mx-auto px-6 py-24 md:py-32">
     <div class="space-y-12">
       <!-- Header -->
-      <header class="space-y-4 border-b border-zinc-900 pb-12">
-        <a href="/" class="text-sm font-mono text-zinc-500 hover:text-white transition-colors flex items-center gap-2">
-          ← RETURN TO BASE
+      <header class="space-y-4 border-b border-white/5 pb-12">
+        <a href="./" class="text-[10px] font-mono text-zinc-500 hover:text-emerald-400 transition-colors flex items-center gap-2 tracking-widest uppercase">
+          ← Return to Base
         </a>
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white">
-          The <span class="text-zinc-400">Sovereign Protocol</span>
+        <h1 class="text-4xl md:text-7xl font-bold tracking-tighter text-white">
+          The <span class="text-zinc-600">Sovereign Protocol</span>
         </h1>
-        <p class="text-xl text-zinc-500 font-mono">
-          VERSION 1.0.0 | GOVERNANCE & ETHICS WHITE-PAPER
+        <p class="text-xs text-emerald-500/60 font-mono tracking-[0.2em] uppercase">
+          Version 1.0.0 | Governance & Ethics Whitepaper
         </p>
       </header>
 
       <!-- Section: The Overlord -->
       <section class="space-y-6">
-        <h2 class="text-2xl font-bold border-l-2 border-zinc-800 pl-4">I. The Overlord (Entity 0)</h2>
-        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold border-l border-emerald-500/30 pl-6 text-white tracking-tight">I. The Overlord (Entity 0)</h2>
+        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4 font-light">
           <p>
             In the Tadpole OS ecosystem, the human operator is designated as **Entity 0**, also known as **The Overlord**. Unlike traditional AI systems where the user is a passive observer, the Overlord is the active heart of the swarm.
           </p>
-          <ul class="list-disc pl-5 space-y-2">
-            <li><strong>Final Authority</strong>: No agent may execute a destructive or high-risk tool without explicit encryption-checked approval from Entity 0.</li>
-            <li><strong>Strategic Directive</strong>: Intelligence flows downward. The Overlord provides the "Global Intent," which is recursively decomposed by sub-agents into tactical execution steps.</li>
-            <li><strong>The Safety Gate</strong>: A dedicated Oversight Dashboard ensures every LLM-generated decision is visible, auditable, and retractable in real-time.</li>
-          </ul>
+          <div class="glass-surface p-8 rounded-2xl space-y-4 mt-8">
+            <ul class="list-disc pl-5 space-y-3 text-sm">
+              <li><strong>Final Authority</strong>: No agent may execute a destructive or high-risk tool without explicit encryption-checked approval from Entity 0.</li>
+              <li><strong>Strategic Directive</strong>: Intelligence flows downward. The Overlord provides the "Global Intent," which is recursively decomposed by sub-agents into tactical execution steps.</li>
+              <li><strong>The Safety Gate</strong>: A dedicated Oversight Dashboard ensures every LLM-generated decision is visible, auditable, and retractable in real-time.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Section: Local-First Sovereignty -->
       <section class="space-y-6">
-        <h2 class="text-2xl font-bold border-l-2 border-zinc-800 pl-4">II. Sovereign Execution</h2>
-        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold border-l border-emerald-500/30 pl-6 text-white tracking-tight">II. Sovereign Execution</h2>
+        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4 font-light">
           <p>
             Data sovereignty is not just a feature—it is a fundamental right. Small and medium businesses (SMBs) often face the choice between high-cost cloud compliance or low-intelligence local tools. Tadpole OS breaks this dichotomy.
           </p>
           <div class="grid md:grid-cols-2 gap-8 my-8">
-            <div class="p-6 bg-zinc-950/50 border border-zinc-900 rounded-xl">
-              <h4 class="font-bold text-white mb-2">Private Context</h4>
-              <p class="text-sm">Strategic intelligence and proprietary data never leave your local hardware. The "Brain" of your company remains yours alone.</p>
+            <div class="p-8 glass-surface rounded-2xl relative overflow-hidden group">
+              <div class="absolute -right-4 -top-4 w-16 h-16 bg-emerald-500/5 blur-2xl group-hover:bg-emerald-500/10 transition-colors"></div>
+              <h4 class="font-bold text-white mb-2 tracking-tight">Private Context</h4>
+              <p class="text-xs text-zinc-500 leading-relaxed">Strategic intelligence and proprietary data never leave your local hardware. The "Brain" of your company remains yours alone.</p>
             </div>
-            <div class="p-6 bg-zinc-950/50 border border-zinc-900 rounded-xl">
-              <h4 class="font-bold text-white mb-2">Agent Accountability</h4>
-              <p class="text-sm">Every agent action is logged locally in high-performance SQLite ledgers, creating a permanent, immutable record of decision-making.</p>
+            <div class="p-8 glass-surface rounded-2xl relative overflow-hidden group">
+              <div class="absolute -right-4 -top-4 w-16 h-16 bg-emerald-500/5 blur-2xl group-hover:bg-emerald-500/10 transition-colors"></div>
+              <h4 class="font-bold text-white mb-2 tracking-tight">Agent Accountability</h4>
+              <p class="text-xs text-zinc-500 leading-relaxed">Every agent action is logged locally in high-performance SQLite ledgers, creating a permanent, immutable record of decision-making.</p>
             </div>
           </div>
         </div>
@@ -58,28 +62,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <!-- Section: Scaling Small Teams -->
       <section class="space-y-6">
-        <h2 class="text-2xl font-bold border-l-2 border-zinc-800 pl-4">III. The Scalability Matrix</h2>
-        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold border-l border-emerald-500/30 pl-6 text-white tracking-tight">III. The Scalability Matrix</h2>
+        <div class="prose prose-invert max-w-none text-zinc-400 leading-relaxed space-y-4 font-light">
           <p>
             Tadpole OS enables one person to manage the output of twenty. Our recursive architecture ensures that even as complexity scales, the "cognitive load" on the Overlord remains manageable.
           </p>
-          <blockquote class="border-l-2 border-zinc-400 pl-6 italic text-lg text-zinc-300 my-8">
+          <blockquote class="border-l-2 border-emerald-500/20 pl-8 italic text-lg text-zinc-200 my-12 font-light leading-relaxed">
             "We believe the next unicorn companies will be founded by teams of less than five people, powered by sovereign swarms of over fifty agents."
           </blockquote>
           <p>
-            By leveraging Rust-powered concurrency and triple-slot model routing, SMBs can deploy specialized agents (Security Audit, DevOps, Marketing, Research) simultaneously, creating a hyper-efficient "Virtual Corporation."
+            By leveraging Rust-powered concurrency and triple-slot model routing, SMBs can deploy specialized agents simultaneously, creating a hyper-efficient "Virtual Corporation."
           </p>
         </div>
       </section>
 
       <!-- Footer CTA -->
-      <footer class="pt-24 border-t border-zinc-900 text-center space-y-6">
-        <p class="text-zinc-500 font-mono text-sm tracking-widest">END OF DOCUMENT</p>
+      <footer class="pt-24 border-t border-white/5 text-center space-y-12">
+        <p class="text-zinc-500 font-mono text-[10px] tracking-[0.4em] uppercase">End of Document</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://github.com/DDS-Solutions/TadPole-OS" class="w-full sm:w-auto px-8 py-3 bg-white text-zinc-950 font-semibold rounded-lg hover:bg-zinc-200 transition-colors">
+          <a href="https://github.com/DDS-Solutions/TadPole-OS" class="w-full sm:w-auto px-10 py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)] text-sm">
             Start Scaling
           </a>
-          <a href="/" class="w-full sm:w-auto px-8 py-3 bg-zinc-900 border border-zinc-800 text-white font-semibold rounded-lg hover:bg-zinc-800 transition-colors text-zinc-400">
+          <a href="./" class="w-full sm:w-auto px-10 py-4 glass-surface text-zinc-400 font-bold rounded-xl hover:bg-white/5 transition-all text-sm">
             Back to Home
           </a>
         </div>
