@@ -85,28 +85,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- STEP 2: Discovery -->
         <div x-show="currentStep === 2" class="space-y-8">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-zinc-900 border border-emerald-500/30 flex items-center justify-center text-xl">🔍</div>
-            <div>
-              <p class="text-emerald-400 font-mono text-[10px] uppercase tracking-widest">Phase 01: Mapping Domain</p>
-              <h4 class="text-white font-bold">Scanning Cluster Architecture...</h4>
-            </div>
+          <div class="relative group">
+            <div class="absolute inset-0 bg-emerald-500/10 blur-3xl opacity-50"></div>
+            <img src="/Tadpole-Marketing/assets/real_os_dashboard.png" alt="OS Dashboard" class="rounded-xl border border-white/10 shadow-2xl relative z-10" />
+            <div class="absolute bottom-4 right-4 glass-surface px-3 py-1 rounded-full text-[8px] font-mono text-emerald-400 uppercase tracking-widest z-20">Live Interface</div>
           </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="p-4 glass-surface rounded-xl border border-white/5 space-y-2">
-              <div class="h-1 w-full bg-zinc-900 rounded-full overflow-hidden">
-                <div class="progress-gradient h-full w-[80%]"></div>
-              </div>
-              <p class="text-[8px] font-mono text-zinc-600 uppercase">Strategic Ops</p>
-            </div>
-            <div class="p-4 glass-surface rounded-xl border border-white/5 space-y-2">
-              <div class="h-1 w-full bg-zinc-900 rounded-full overflow-hidden">
-                <div class="progress-gradient h-full w-[40%]"></div>
-              </div>
-              <p class="text-[8px] font-mono text-zinc-600 uppercase">Core Intelligence</p>
-            </div>
-          </div>
-          <div class="terminal-line text-zinc-600 text-[10px] leading-relaxed">
+          <div class="terminal-line text-zinc-600 text-[10px] leading-relaxed mt-4">
             [SYS] Domain mapped: 14 Nodes, 3 Data Reservoirs, 1 Neural Gateway. <br/>
             [SYS] Objective: Security Integration Audit. <br/>
             [Tadpole] Dispatching mission to Alpha Node: Elon (ID 3).
@@ -116,36 +100,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- STEP 3: Recruitment -->
         <div x-show="currentStep === 3" class="space-y-8">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-zinc-900 border border-emerald-500/30 flex items-center justify-center text-xl">🐝</div>
-            <div>
-              <p class="text-emerald-400 font-mono text-[10px] uppercase tracking-widest">Phase 02: Parallel Recruitment</p>
-              <h4 class="text-white font-bold">Recruiting Swarm Nodes...</h4>
-            </div>
+          <div class="relative group">
+            <div class="absolute inset-0 bg-emerald-500/10 blur-3xl opacity-50"></div>
+            <img src="/Tadpole-Marketing/assets/real_os_nodes.png" alt="OS Hierarchy" class="rounded-xl border border-white/10 shadow-2xl relative z-10" />
           </div>
-          <div class="space-y-4">
-            <div class="flex items-center justify-between p-4 glass-surface rounded-xl border-l-2 border-emerald-500">
-              <div class="flex items-center gap-4">
-                <span class="text-2xl">🤖</span>
-                <div>
-                  <p class="text-white text-sm font-bold">Elon</p>
-                  <p class="text-[8px] text-zinc-500 uppercase font-mono">Role: CTO / Engineering</p>
-                </div>
-              </div>
-              <span class="text-emerald-500 text-[10px] font-mono tracking-widest uppercase animate-pulse">Recruited</span>
-            </div>
-            <div class="flex items-center justify-between p-4 glass-surface rounded-xl">
-              <div class="flex items-center gap-4">
-                <span class="text-2xl">🔒</span>
-                <div>
-                  <p class="text-white text-sm font-bold">Cipher</p>
-                  <p class="text-[8px] text-zinc-500 uppercase font-mono">Role: Security Auditor</p>
-                </div>
-              </div>
-              <span class="text-zinc-600 text-[10px] font-mono tracking-widest uppercase">Awaiting Alpha</span>
-            </div>
-          </div>
-          <div class="terminal-line text-zinc-500 text-[10px]">
+          <div class="terminal-line text-zinc-500 text-[10px] mt-4">
              [Tadpole] "Elon, analyze 'server-rs' for hardcoded secrets or unsafe blocks." <br/>
              [Elon] "Strategic intent received. Initiating code audit on Silicon Horizon."
           </div>
@@ -154,26 +113,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- STEP 4: Execution -->
         <div x-show="currentStep === 4" class="space-y-8">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-zinc-900 border border-emerald-500/30 flex items-center justify-center text-xl">🚀</div>
-            <div>
-              <p class="text-emerald-400 font-mono text-[10px] uppercase tracking-widest">Phase 03: Deterministic Execution</p>
-              <h4 class="text-white font-bold">Mission: Dual-Node Security Audit</h4>
-            </div>
+          <div class="relative group">
+            <div class="absolute inset-0 bg-emerald-500/10 blur-3xl opacity-50"></div>
+            <img src="/Tadpole-Marketing/assets/real_os_oversight.png" alt="OS Oversight" class="rounded-xl border border-white/10 shadow-2xl relative z-10" />
           </div>
-          <div class="relative w-full aspect-[2/1] bg-black/50 rounded-2xl border border-white/5 p-6 flex items-center justify-center overflow-hidden">
-             <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-500 to-zinc-500 animate-pulse"></div>
-             <div class="text-center space-y-4">
-               <p class="text-xs font-mono text-zinc-500 tracking-widest">SYNERGY ACTIVITY DETECTED</p>
-               <div class="flex gap-12 justify-center">
-                 <div class="text-4xl text-emerald-500 data-pulse">🤖</div>
-                 <div class="text-2xl text-zinc-700">↔️</div>
-                 <div class="text-4xl text-emerald-500 data-pulse" style="animation-delay: 1s">🐸</div>
-               </div>
-               <p class="text-[10px] text-zinc-600 uppercase font-mono tracking-tighter">Memory Safe: OK | Oversight: Approved</p>
-             </div>
-          </div>
-          <div class="terminal-line text-emerald-500/60 font-mono text-[10px]">
+          <div class="terminal-line text-emerald-500/60 font-mono text-[10px] mt-4">
             Checking src/capabilities/secrets.rs ... OK <br/>
             Validating Neural Vault AES-256 integrity ... OK <br/>
             Synthesizing Risk Report... 100%
