@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/assets/Github Social Preview Tadpole OS_V2.png" width="1280" alt="Tadpole OS - Sovereign Intelligence" />
+  <img src=".github/assets/Github Social Preview Tadpole OS_V2.png" width="1280" alt="AI-Tadpole-OS - Sovereign Intelligence" />
 
   # 🚀 Tadpole OS Marketing Hub
   **The high-performance, Astro-powered gateway to the Sovereign Protocol.**
