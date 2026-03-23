@@ -11,7 +11,7 @@
   ---
 </div>
 
-This repository contains the source code for the official **Tadpole OS** marketing website, built with **Astro** for zero-JS performance and extreme search engine discoverability.
+This repository contains the source code for the official **AI-Tadpole-OS** marketing website, built with **Astro** for zero-JS performance and extreme search engine discoverability.
 
 ## 🌟 Key Features
 
