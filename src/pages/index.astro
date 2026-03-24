@@ -91,6 +91,81 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
+    <!-- Interface Showcase Carousel -->
+    <section class="py-32 border-t border-white/5 mt-32 relative" x-data="{ 
+      activeSlide: 0, 
+      slides: [
+        { title: 'Initial Dash & Handshake', time: '17:45', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174526.png' },
+        { title: 'Neural Gateway Verification', time: '17:45', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174554.png' },
+        { title: 'Swarm Discovery Initiated', time: '17:46', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174614.png' },
+        { title: 'Context Bus Mapping', time: '17:46', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174656.png' },
+        { title: 'Recursive Agent Spawning', time: '17:48', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174846.png' },
+        { title: 'Tool Execution (Oversight)', time: '17:49', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 174954.png' },
+        { title: 'Hardened Vault Access', time: '17:51', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 175102.png' },
+        { title: 'Multi-Node Synchronization', time: '17:51', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 175129.png' },
+        { title: 'Sovereign Audit Progress', time: '17:52', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 175219.png' },
+        { title: 'Final Mission Reconcile', time: '17:54', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 175438.png' },
+        { title: 'System Secure (Sovereign)', time: '17:55', img: '/Tadpole-Marketing/assets/screenshots/Screenshot 2026-03-24 175523.png' }
+      ] 
+    }">
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">Mission Timeline</h2>
+        <p class="text-zinc-500 font-mono text-xs uppercase tracking-[0.3em]">Handshake to Sovereignty | 17:45 - 17:55</p>
+      </div>
+
+      <div class="relative max-w-5xl mx-auto px-4 group">
+        <!-- Main Image -->
+        <div class="relative aspect-video rounded-3xl border border-white/10 overflow-hidden shadow-2xl glass-surface">
+          <template x-for="(slide, index) in slides" :key="index">
+            <div 
+              x-show="activeSlide === index" 
+              x-transition:enter="transition ease-out duration-500"
+              x-transition:enter-start="opacity-0 scale-95"
+              x-transition:enter-end="opacity-100 scale-100"
+              class="absolute inset-0"
+            >
+              <img :src="slide.img" :alt="slide.title" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              
+              <!-- Slide Info -->
+              <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+                <div class="space-y-1">
+                  <div class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest" x-text="'TIMESTAMP: ' + slide.time"></div>
+                  <h3 class="text-2xl font-bold text-white tracking-tight" x-text="slide.title"></h3>
+                </div>
+                <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest" x-text="(index + 1) + ' / ' + slides.length"></div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- Navigation -->
+        <button 
+          @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
+          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 rounded-full glass-surface border border-white/10 flex items-center justify-center text-white hover:bg-emerald-500 hover:text-black transition-all opacity-0 group-hover:opacity-100"
+        >
+          ←
+        </button>
+        <button 
+          @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
+          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 rounded-full glass-surface border border-white/10 flex items-center justify-center text-white hover:bg-emerald-500 hover:text-black transition-all opacity-0 group-hover:opacity-100"
+        >
+          →
+        </button>
+
+        <!-- Thumbnails / Progress -->
+        <div class="flex justify-center gap-2 mt-8">
+          <template x-for="(slide, index) in slides" :key="index">
+            <button 
+              @click="activeSlide = index"
+              class="w-2 h-2 rounded-full transition-all duration-300"
+              :class="activeSlide === index ? 'w-8 bg-emerald-500' : 'bg-zinc-800 hover:bg-zinc-600'"
+            ></button>
+          </template>
+        </div>
+      </div>
+    </section>
+
     <!-- RREST Excellence Section -->
     <section class="py-32 border-t border-white/5 mt-32 relative overflow-hidden">
       <div class="grid md:grid-cols-2 gap-16 items-center">
